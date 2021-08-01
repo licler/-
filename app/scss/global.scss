@@ -48,9 +48,9 @@ img {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
-.content{
+.main {
 	flex: 1 0 auto;
 }
 .footer{
