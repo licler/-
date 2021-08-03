@@ -345,6 +345,50 @@ img {
   background-color: transparent;
 }
 
+.slider-page {
+  padding-top: 20px;
+}
+
+.slider-page__items {
+  position: relative;
+}
+
+.slider-page .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 50%;
+  text-align: center;
+  bottom: 25px;
+}
+
+.slider-page .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.slider-page .slick-dots li.slick-active button {
+  background-color: #497952;
+}
+
+.slider-page .slick-dots li {
+  display: inline-block;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
 .footer {
   background-color: #497952;
   padding: 30px 0px;

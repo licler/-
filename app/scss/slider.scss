@@ -1,0 +1,40 @@
+// start slider-page
+.slider-page {
+    padding-top: 20px;
+
+    &__items {
+        position: relative;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0 50%;
+        text-align: center;
+        bottom: 25px;
+    }
+
+    .slick-dots button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: $bg;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+}
+
+// end slider-page
