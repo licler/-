@@ -11,7 +11,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin: 0 50%;
+        margin: 0 41%;
         text-align: center;
         bottom: 25px;
     }
@@ -19,7 +19,7 @@
     .slick-dots button {
         font-size: 0;
         width: 10px;
-        height: 10px;
+        height: 12px;
         border-radius: 50%;
         border: none;
         outline: none;
@@ -35,6 +35,67 @@
         margin-right: 13px;
         margin-left: 13px;
     }
+
+    .slick-btn {
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 10;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 10;
+    }
 }
 
 // end slider-page
+
+// start info
+.info {
+    margin: 52px 108px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        max-width: 135px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    &__item-images {
+        width: 115px;
+        height: 90px;
+       
+        
+    }
+    &__item-box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item-images--phone {
+        width: 72px;
+    }
+    &__item-name {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+// end info
