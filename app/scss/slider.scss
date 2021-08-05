@@ -71,31 +71,74 @@
     }
 
     &__item {
-        max-width: 135px;
+        max-width: 125px;
         width: 100%;
         margin: 0 auto;
 
     }
 
-    &__item-images {
-        width: 115px;
-        height: 90px;
-       
-        
-    }
     &__item-box {
         margin: 0 auto;
         display: flex;
         justify-content: center;
     }
 
-    &__item-images--phone {
-        width: 72px;
-    }
     &__item-name {
         text-align: center;
         margin-top: 20px;
+        font-family: 'BwModelicaBold';
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: $bg;
     }
 }
 
 // end info
+
+// start presentation
+.presentation {
+    margin-bottom: 52px;
+    &__wrapper {
+        padding: 0 55px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__box {
+        max-width: 540px;
+    }
+    &__box-title {
+        font-family: 'BwModelicaBold';
+        font-size: 16px;
+        line-height: 19.2px;
+        color: $text;
+        margin-bottom: 13px;
+    }
+    &__box-text {
+        font-family: 'BwModelicaMedium';
+        font-size: 12px;
+        line-height: 16px;
+        color: $text;
+    }
+    &__box-link {
+        font-size: 11px;
+        line-height: 13px;
+        color: $bg;
+        position: absolute;
+        left: 45%;
+        text-decoration: underline;
+    }
+    &__info {
+        position: relative;
+    }
+    &__info-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+// end presentation
