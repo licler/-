@@ -1,0 +1,16 @@
+// start catalog
+
+.catalog {
+    &__item {
+        max-width: 266px;
+        background-color: #fff;
+        border: 1px solid $bg;
+        padding: 7px 11px 20px 30px;
+        
+    }
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}
