@@ -16,6 +16,28 @@ $(".rate-star").rateYo({
        starWidth: '14px'
      });
 	
-	
-	
+
+// ассортимент каталога
+
+$('.catalog__btn').on('click', function(){
+$('.catalog__palitra-btn').hide(''); 
+$('.catalog__palitra-close').show(''); 
+$('.catalog__palitra-wrapper').addClass('.catalog__palitra-wrapper--active');
+});
+
+$('.catalog__btn').on('click', function(){
+       $('.catalog__palitra-close').hide(''); 
+       $('.catalog__palitra-btn').show(''); 
+       // $('.catalog__palitra-close').hide(''); 
+       // $('.catalog__palitra-btn').show(''); 
+       $('.catalog__palitra-wrapper').removeClass('.catalog__palitra-wrapper--active');
+       });
+
+
+
+
+
+
+
+
 });
