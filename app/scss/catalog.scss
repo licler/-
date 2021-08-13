@@ -1,8 +1,51 @@
 // start catalog
 
 .catalog {
+    &__share {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__box-link {
+        max-width: 190px;
+        background-color: $bg;
+        border-radius: 30px;
+        padding: 7px 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__box-link--images {
+        margin-right: 15px;
+    }
+
+    &__box {
+        display: flex;
+    }
+    &__box-discont {
+        margin-left: 48px;
+    }
+    &__box-discont {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 14.4px;
+        padding-right: 48px;
+       border-right: 1px solid $bg;
+       height: 40px;
+    }
+
     &__items {
         margin-bottom: 52px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__item {
@@ -71,30 +114,11 @@
         color: $text;
         margin: 0 auto;
         display: block;
-        position: relative;
+
         padding-right: 26px;
         padding-left: 10px;
         margin-bottom: 19px;
 
-        &::before {
-            content: "";
-            background-image: url("../img/content/down.png");
-            position: absolute;
-            top: 50%;
-            right: 7px;
-            width: 8.5px;
-            height: 6.5px;
-            display: block;
-            transform: translateY(-50%);
-        }
-    }
-
-    &____palitra-btn--active {
-        display: none;
-    }
-
-    &__palitra-close {
-        display: none;
     }
 
     &__palitra-wrapper {
@@ -105,6 +129,37 @@
         display: block;
     }
 
+    .btn-open {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/down.png");
+            position: absolute;
+            top: 63%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+
+    .btn-close {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/up.png");
+            position: absolute;
+            top: 62%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
 
     &__info {
         text-align: center;
