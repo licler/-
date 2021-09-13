@@ -24,13 +24,27 @@ $('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
 });
 
 
-$('.catalog__palitra-btn').click(function()
-{
-  $('span').toggle();
+
+
+
+
+// $('.catalog__palitra-btn').click(function()
+// {
+//   $('span').toggle();
+// });
+
+//кнопка активности
+$('.catalog__filter-list').on('click', function(){
+$('.catalog__item').addClass('active');
+$('.catalog__filter-list').addClass('active');
+$('.catalog__filter-move').removeClass('active');
 });
 
-
-
+$('.catalog__filter-move').on('click', function(){
+$('.catalog__item').addClass('active');
+$('.catalog__filter-move').addClass('active');
+$('.catalog__filter-list').removeClass('active');
+});
 
 
 
