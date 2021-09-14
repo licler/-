@@ -8,7 +8,7 @@
     }
 
     &__box-link {
-        max-width: 190px;
+        width: 190px;
         background-color: $bg;
         border-radius: 30px;
         padding: 7px 20px;
@@ -20,6 +20,23 @@
         font-size: 14px;
         display: flex;
         align-items: center;
+    }
+    &__btn {
+        min-width: 150px;
+      
+        background-color: $bg;
+        border-radius: 30px;
+        padding: 7px 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        border:none;
+        outline: none;
     }
 
     &__box-link--images {
@@ -245,3 +262,27 @@
         display: block;
     }
 }
+// start parthner
+.parthner {
+    &__title {
+        font-family: "BwModelicaBold";
+        font-size: 16px;
+        line-height: 19.2px;
+        color: $text;
+        margin-bottom: 22px;
+    }
+    &__content {
+        max-width: 995px;
+        width: 100%;
+        line-height: 23.5px;
+        font-size: 12px;
+        margin-bottom: 55px;
+    }
+    &__items {
+        display: grid;
+    }
+}
+
+
+
+// end parthner
