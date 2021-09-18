@@ -812,6 +812,15 @@ img {
   display: block;
 }
 
+.parthner {
+  margin-bottom: 48px;
+}
+
+.parthner__wrapper {
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
 .parthner__title {
   font-family: "BwModelicaBold";
   font-size: 16px;
@@ -831,6 +840,114 @@ img {
 .parthner__items {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.parthner__item {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.parthner__item-name {
+  margin-left: 18px;
+  line-height: 16.8px;
+  text-decoration: underline;
+}
+
+.parthner__inner {
+  display: none;
+}
+
+.parthner__inner--active {
+  display: block;
+}
+
+.parthner__btn {
+  min-width: 90px;
+  border-radius: 30px;
+  border: 1px solid #D0D0D0;
+  padding: 5px 0;
+  background-color: #fff;
+  font-size: 10px;
+  line-height: 9.6px;
+  text-align: center;
+  font-weight: 500;
+  color: #535353;
+  margin: 0 auto;
+  display: block;
+  padding-right: 26px;
+  padding-left: 10px;
+  margin-bottom: 19px;
+}
+
+.parthner .btn-open {
+  position: relative;
+}
+
+.parthner .btn-open::before {
+  content: "";
+  background-image: url("../img/content/down.png");
+  position: absolute;
+  top: 63%;
+  right: -17px;
+  width: 8.5px;
+  height: 6.5px;
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.parthner .btn-close {
+  position: relative;
+}
+
+.parthner .btn-close::before {
+  content: "";
+  background-image: url("../img/content/up.png");
+  position: absolute;
+  top: 62%;
+  right: -17px;
+  width: 8.5px;
+  height: 6.5px;
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.reviews__title {
+  line-height: 19.2px;
+  font-family: "BwModelicaBold";
+  font-size: 16px;
+  margin-bottom: 21px;
+}
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 475px;
+  width: 100%;
+  border: 1px solid #497952;
+  padding: 7px 18px;
+}
+
+.reviews__content {
+  margin-left: 12px;
+}
+
+.reviews__box {
+  max-width: 366px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 14.4px;
 }
 
 .footer {
@@ -1005,6 +1122,10 @@ img {
 .webp .catalog .btn-open::before { background-image: url(../img/content/down.webp); }
 
 .webp .catalog .btn-close::before { background-image: url(../img/content/up.webp); }
+
+.webp .parthner .btn-open::before { background-image: url(../img/content/down.webp); }
+
+.webp .parthner .btn-close::before { background-image: url(../img/content/up.webp); }
 
 .webp .footer__inner-work::before { background-image: url(../img/footer/clock.webp); }
 

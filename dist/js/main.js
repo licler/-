@@ -23,6 +23,9 @@ $('.catalog__palitra-btn').on('click', function(){
 $('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
 });
 
+$('.parthner__btn').on('click', function(){
+$('.parthner__inner').toggleClass('parthner__inner--active');
+});
 
 
 

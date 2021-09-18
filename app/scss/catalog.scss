@@ -21,9 +21,10 @@
         display: flex;
         align-items: center;
     }
+
     &__btn {
         min-width: 150px;
-      
+
         background-color: $bg;
         border-radius: 30px;
         padding: 7px 20px;
@@ -35,7 +36,7 @@
         font-size: 14px;
         display: flex;
         align-items: center;
-        border:none;
+        border: none;
         outline: none;
     }
 
@@ -82,12 +83,13 @@
     }
 
     .catalog__filter-list.active {
-        svg{
+        svg {
             fill: $bg;
         }
     }
+
     .catalog__filter-move.active {
-        svg{
+        svg {
             fill: $bg;
         }
     }
@@ -172,7 +174,6 @@
         padding-right: 26px;
         padding-left: 10px;
         margin-bottom: 19px;
-
     }
 
     &__palitra-wrapper {
@@ -185,7 +186,6 @@
 
     .btn-open {
         position: relative;
-
         &::before {
             content: "";
             background-image: url("../img/content/down.png");
@@ -198,10 +198,8 @@
             transform: translateY(-50%);
         }
     }
-
     .btn-close {
         position: relative;
-
         &::before {
             content: "";
             background-image: url("../img/content/up.png");
@@ -262,8 +260,15 @@
         display: block;
     }
 }
+
 // start parthner
 .parthner {
+    margin-bottom: 48px;
+    &__wrapper {
+        padding-left: 70px;
+        padding-right: 40px;
+    }
+
     &__title {
         font-family: "BwModelicaBold";
         font-size: 16px;
@@ -271,6 +276,7 @@
         color: $text;
         margin-bottom: 22px;
     }
+
     &__content {
         max-width: 995px;
         width: 100%;
@@ -278,8 +284,97 @@
         font-size: 12px;
         margin-bottom: 55px;
     }
+
     &__items {
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-name {
+        margin-left: 18px;
+        line-height: 16.8px;
+        text-decoration: underline;
+    }
+    &__inner {
+        display: none;
+    }
+    &__inner--active {
+        display: block;
+    }
+    &__btn {
+        min-width: 90px;
+        border-radius: 30px;
+        border: 1px solid #D0D0D0;
+        padding: 5px 0;
+        background-color: #fff;
+        font-size: 10px;
+        line-height: 9.6px;
+        text-align: center;
+        font-weight: 500;
+        color: $text;
+        margin: 0 auto;
+        display: block;
+        padding-right: 26px;
+        padding-left: 10px;
+        margin-bottom: 19px;
+    }
+    .btn-open {
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url("../img/content/down.png");
+            position: absolute;
+            top: 63%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+    .btn-close {
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url("../img/content/up.png");
+            position: absolute;
+            top: 62%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+}
+.reviews {
+    &__title {
+        line-height: 19.2px;
+        font-family: "BwModelicaBold";
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+    &__item {
+      display: flex;
+      max-width: 475px;
+      width: 100%;
+      border: 1px solid #497952;
+      padding: 7px 18px;
+    }
+    &__content {
+        margin-left: 12px;
+    }
+    &__box {
+        max-width: 366px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 14.4px;
     }
 }
 
