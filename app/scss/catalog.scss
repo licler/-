@@ -359,12 +359,13 @@
         font-family: "BwModelicaBold";
         font-size: 16px;
         margin-bottom: 21px;
+       
     }
     &__items {
         margin-bottom: 50px;
     }
     &__item {
-      display: flex;
+      display: flex !important;
       align-items: center;
       max-width: 475px;
       width: 100%;
@@ -398,9 +399,12 @@
         right: 80px;
        
     }
-    .rate-star {
-        color: #F9DA92;
-    }
+    // .rate-star {
+       
+    //     polygon {
+    //         fill: #F9DA92;
+    //     }
+    // }
     &__box-text {
         font-size: 12px;
         line-height: 14.4px;
@@ -416,16 +420,38 @@
         line-height: 14.4px;
         min-width: 66px;
         margin-bottom: 6px;
+        font-weight: 700;
     }
     &__item-link {
         position: absolute;
         right: 0;
         font-size: 11px;
         line-height: 13.2px;
-        
+        color: $bg;
+        text-decoration: underline;
+    }
+    .slick-btn {
+        background-color: transparent;
+        border: none;
+    }
+    .slick-next {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        right: 0;
+        z-index: 10
+    }
+    .slick-prev {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        left: -87px;
+        z-index: 10
     }
 }
 
 
 
 // end parthner
+
+

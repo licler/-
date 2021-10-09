@@ -50,6 +50,17 @@ $('.catalog__filter-list').removeClass('active');
 });
 
 
+// слайдер цитат
+$('.reviews__items').slick({	
+       arrows: true,
+       // autoplay: true,
+       infinite: true,
+       slidesToShow: 2,
+       slidesToScroll: 2,
+       prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
+       nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
+});
+
 
 
 });

@@ -9,12 +9,15 @@
         align-items: center;
         margin-bottom: 47px;
     }
+
     &__list--instagram {
         margin-bottom: -12px;
     }
-    &__list-item + .footer__list-item {
+
+    &__list-item+.footer__list-item {
         margin-right: 12px;
     }
+
     &__list-item:first-child {
         margin-right: 12px;
     }
@@ -149,8 +152,23 @@
             left: -25px;
             top: 0px
         }
+
     }
 
+    &__copi {
+        height: 60px;
+        background-color: #D9E6CC;
+        font-size: 12px;
+        line-height: 14.4px;
+        text-align: center;
+        color: $bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__copi-link {
+        text-decoration: underline;
+    }
 
 
 }
