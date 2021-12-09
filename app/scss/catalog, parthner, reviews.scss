@@ -24,7 +24,6 @@
 
     &__btn {
         min-width: 150px;
-
         background-color: $bg;
         border-radius: 30px;
         padding: 7px 20px;
@@ -179,6 +178,9 @@
     &__palitra-wrapper {
         display: none;
     }
+    &__action {
+        display: block;
+    }
 
     &__palitra-wrapper--active {
         display: block;
@@ -323,7 +325,14 @@
         padding-right: 26px;
         padding-left: 10px;
         margin-bottom: 19px;
+      
     }
+    .parthner__btn:hover {
+        background-color: $bg;
+        transition: .7s;
+        color: #fff;
+    }
+  
     .btn-open {
         position: relative;
         &::before {
@@ -433,6 +442,7 @@
     .slick-btn {
         background-color: transparent;
         border: none;
+        border-radius: 10%;
     }
     .slick-next {
         position: absolute;
@@ -447,6 +457,13 @@
         transform: translateY(-60%);
         left: -87px;
         z-index: 10
+        
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+        background-color: $bg;
+        color: #fff;  
+        transition: .8s;
     }
 }
 

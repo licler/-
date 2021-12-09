@@ -38,6 +38,11 @@
         margin-right: 20px;
         font-family: "BwModelicaBold";
     }
+    .header__top-link:hover {
+        transition: .8s;
+        background-color: $bg;
+        color: #fff;
+    }
 
     &__top-lock {
         margin-right: 13px;

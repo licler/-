@@ -1,5 +1,5 @@
 $(function(){
-//слайдер
+//слайдер/////////////////////////////////////
  $('.slider__items').slick({	
         arrows: true,
         dots: true,
@@ -8,7 +8,7 @@ $(function(){
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
  });
-
+/////////////////////////////////////////////
  // рейтинг
 
 $(".rate-star").rateYo({
@@ -16,12 +16,20 @@ $(".rate-star").rateYo({
        starWidth: '14px'
      });
 	
-
+///////////////////////////////////////////
 // ассортимент каталога
 
-$('.catalog__palitra-btn').on('click', function(){
-$('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
-});
+// const buttonAct = document.querySelectorAll('catalog__palitra-btn');
+
+// buttonAct.addEventListener("click", function(){
+//        catalog.classList.toggle('catalog__action');
+       
+// })
+
+
+// $('.catalog__palitra-btn').on('click', function(){
+// $('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
+// });
 
 $('.parthner__btn').on('click', function(){
 $('.parthner__inner').toggleClass('parthner__inner--active');
@@ -31,12 +39,7 @@ $('.parthner__inner').toggleClass('parthner__inner--active');
 
 
 
-// $('.catalog__palitra-btn').click(function()
-// {
-//   $('span').toggle();
-// });
-
-//кнопка активности
+//кнопка активности/////////////////////////////////////////
 $('.catalog__filter-list').on('click', function(){
 $('.catalog__item').addClass('active');
 $('.catalog__filter-list').addClass('active');
@@ -48,9 +51,9 @@ $('.catalog__item').addClass('active');
 $('.catalog__filter-move').addClass('active');
 $('.catalog__filter-list').removeClass('active');
 });
+////////////////////////////////////////////////////////////
 
-
-// слайдер цитат
+// слайдер цитат/////////////////////////////////////////////
 $('.reviews__items').slick({	
        arrows: true,
        // autoplay: true,
@@ -58,9 +61,9 @@ $('.reviews__items').slick({
        slidesToShow: 2,
        slidesToScroll: 2,
        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
-       nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
+       nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>'
 });
 
-
+///////////////////////////////////////////////////////////
 
 });

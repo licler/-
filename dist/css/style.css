@@ -169,6 +169,14 @@ img {
   font-family: "BwModelicaBold";
 }
 
+.header .header__top-link:hover {
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+  background-color: #497952;
+  color: #fff;
+}
+
 .header__top-lock {
   margin-right: 13px;
 }
@@ -725,6 +733,10 @@ img {
   display: none;
 }
 
+.catalog__action {
+  display: block;
+}
+
 .catalog__palitra-wrapper--active {
   display: block;
 }
@@ -886,6 +898,14 @@ img {
   margin-bottom: 19px;
 }
 
+.parthner .parthner__btn:hover {
+  background-color: #497952;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s;
+  color: #fff;
+}
+
 .parthner .btn-open {
   position: relative;
 }
@@ -1021,6 +1041,7 @@ img {
 .reviews .slick-btn {
   background-color: transparent;
   border: none;
+  border-radius: 10%;
 }
 
 .reviews .slick-next {
@@ -1041,6 +1062,15 @@ img {
   transform: translateY(-60%);
   left: -87px;
   z-index: 10;
+}
+
+.reviews .slick-prev:hover,
+.reviews .slick-next:hover {
+  background-color: #497952;
+  color: #fff;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
 }
 
 .news__title {
