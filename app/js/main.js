@@ -27,9 +27,17 @@ $(".rate-star").rateYo({
 // })
 
 
+$('.catalog__palitra-btn').on('click', function(evt){
+       evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
+//$('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
+});
+
+
 // $('.catalog__palitra-btn').on('click', function(){
-// $('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
+// $('this').toggleClass('catalog__palitra-wrapper--active');
 // });
+
+
 
 $('.parthner__btn').on('click', function(){
 $('.parthner__inner').toggleClass('parthner__inner--active');
