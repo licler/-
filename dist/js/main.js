@@ -30,7 +30,14 @@ $(".rate-star").rateYo({
 $('.catalog__palitra-btn').on('click', function(evt){
        evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
 //$('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
+if($('.btn-open').html() == 'Показать все') {
+       $('.btn-open').html('Скрыть все');
+}
+else $('.btn-open').html('Показать все');
+return false;
 });
+
+
 
 
 // $('.catalog__palitra-btn').on('click', function(){

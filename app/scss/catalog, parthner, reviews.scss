@@ -80,12 +80,14 @@
         border: none;
         background-color: transparent;
     }
-
+.catalog__buttons {
     .catalog__filter-list.active {
         svg {
             fill: $bg;
         }
     }
+}
+    
 
     .catalog__filter-move.active {
         svg {

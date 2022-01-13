@@ -620,7 +620,7 @@ img {
   background-color: transparent;
 }
 
-.catalog .catalog__filter-list.active svg {
+.catalog .catalog__buttons .catalog__filter-list.active svg {
   fill: #497952;
 }
 
