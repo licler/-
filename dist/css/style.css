@@ -620,14 +620,6 @@ img {
   background-color: transparent;
 }
 
-.catalog .catalog__buttons .catalog__filter-list.active svg {
-  fill: #497952;
-}
-
-.catalog .catalog__filter-move.active svg {
-  fill: #497952;
-}
-
 .catalog__items {
   margin-bottom: 52px;
   display: -webkit-box;
@@ -821,6 +813,14 @@ img {
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
+  display: block;
+}
+
+.catalog .catalog__news-wrapper {
+  display: none;
+}
+
+.catalog .catalog__news-wrapper--active {
   display: block;
 }
 

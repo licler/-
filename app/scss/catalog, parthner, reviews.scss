@@ -80,20 +80,7 @@
         border: none;
         background-color: transparent;
     }
-.catalog__buttons {
-    .catalog__filter-list.active {
-        svg {
-            fill: $bg;
-        }
-    }
-}
-    
 
-    .catalog__filter-move.active {
-        svg {
-            fill: $bg;
-        }
-    }
 
     &__items {
         margin-bottom: 52px;
@@ -261,6 +248,12 @@
         font-weight: 700;
         text-align: center;
         margin: 0 auto;
+        display: block;
+    }
+    .catalog__news-wrapper {
+        display: none;
+    }
+    .catalog__news-wrapper--active {
         display: block;
     }
 }
