@@ -2,21 +2,14 @@ $(function(){
  ///////////////////////////////////////////////////////////////      
 // Меню
 
-$('.header__list-link').mouseenter(function(){
- $(this).css('text-decoration', 'underline');
-});
-$('.header__list-link').mouseleave(function(){
-       $(this).css('text-decoration', 'none');   
-});
+// $('.header__list-link').mouseenter(function(){
+//  $(this).css('text-decoration', 'underline');
+// });
+// $('.header__list-link').mouseleave(function(){
+//        $(this).css('text-decoration', 'none');   
+// });
 
-
-
-
-
-
-
-
-
+/////////////////////////////////////////////////////////////
 
 
 //слайдер/////////////////////////////////////
@@ -31,7 +24,7 @@ $('.header__list-link').mouseleave(function(){
 
 /////////////////////////////////////////////
 
- // рейтинг
+ // рейтинг////////////////////////////////////
 
 $(".rate-star").rateYo({
        rating: 5,
@@ -41,29 +34,40 @@ $(".rate-star").rateYo({
 
 /////////////////////////////////////////////////////////////////////////
 
-// Каталог палитры
+// Каталог палитры//////////////////////////////////////////////////////////////
+
+
+
+
+// if($('.btn-open').html() == 'Показать все') {
+//        $('.btn-open').html('Скрыть все');
+// }
+// else $('.btn-open').html('Показать все');
+// return false;
+//  });
+
+// });
+
+
 $('.catalog__palitra-btn').on('click', function(evt){
+       $('.catalog__palitra-wrapper').removeClass('catalog__palitra-wrapper--active');    
        evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
-//$('.catalog__palitra-wrapper').toggleClass('catalog__palitra-wrapper--active');
-if($('.btn-open').html() == 'Показать все') {
-       $('.btn-open').html('Скрыть все');
-}
-else $('.btn-open').html('Показать все');
-return false;
+       // $('.catalog__palitra-wrapper--active').slideToggle(1000);
 });
+ $('.catalog__btn').click(function(){
+ $('.catalog__news-wrapper').toggleClass('catalog__news-wrapper--active');
+
+ });
+
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////////
 
-$('.catalog__btn').on('click', function(){
-$('.catalog__news-wrapper').toggleClass('catalog__news-wrapper--active');
-});
-
-// $('.catalog__btn').on('click', function(){
-// if($('.catalog__btn').html() == 'Все новинки') {
-//        $('.catalog__btn').html('Все новинки');
-// }
-// else $('.catalog__btn').html('Скрыть новинки');
-// return false;
+// $('.catalog__palitra-btn').on('click', function(){
+// $('.catalog__palitra-wrapper').addClass('catalog__palitra-wrapper--active');
 // });
 
 
@@ -81,7 +85,8 @@ $('.catalog__filter-list').removeClass('active');
 });
 ////////////////////////////////////////////////////////////
 
-// Партнеры
+
+// Партнеры////////////////////////////////////////////////////
 
 $('.parthner__btn').on('click', function(){
 $('.parthner__inner').toggleClass('parthner__inner--active');
@@ -93,7 +98,7 @@ $('.parthner__btn').click(function(){
        else $('.parthner__btn-open').html('Показать все');
        return false;
 });
-
+///////////////////////////////////////////////////////////////
 
 
 // слайдер цитат/////////////////////////////////////////////

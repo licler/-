@@ -43,7 +43,10 @@
         background-color: $bg;
         color: #fff;
     }
+.header__list-link:hover {
+    color: rgb(205, 227, 35);
 
+}
     &__top-lock {
         margin-right: 13px;
     }
@@ -138,7 +141,7 @@
 
     &__list {
         margin-left: 138px;
-        margin-right: 145px;
+        margin-right: 107px;
         display: flex;
         height: 40px;
         align-items: center;
@@ -155,6 +158,12 @@
     &__item:first-child {
         margin-right: 30px;
     }
+}
+.menu-page__item:hover {
+    background-color:#ABAAAA;
+    padding: 12px;
+    transition: all 0.4s cubic-bezier(0.29, 0.79, 1, 1);
+
 }
 
 .search {
