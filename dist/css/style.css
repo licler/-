@@ -304,6 +304,10 @@ img {
   margin-right: 30px;
 }
 
+.menu-page span {
+  display: none;
+}
+
 .menu-page__item:hover {
   background-color: #ABAAAA;
   padding: 12px;
@@ -1442,6 +1446,45 @@ img {
 
 .footer__copi-link {
   text-decoration: underline;
+}
+
+@media (max-width: 1175px) {
+  .menu-page__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .menu-page__list {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu-page {
+    position: relative;
+  }
+
+  .menu-page span {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #fff;
+    font-size: 32px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .menu-page__list .active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    right: 0;
+  }
 }
 
 .webp .catalog .btn-open::before { background-image: url(../img/content/down.webp); }

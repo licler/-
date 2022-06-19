@@ -1,0 +1,38 @@
+// start menu-page
+@media (max-width: 1175px) {
+    .menu-page__list{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 930px) {
+    .menu-page__list{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 840px) {
+    .menu-page{
+        position: relative;
+       span {
+           display: block;
+           position: absolute;
+           right: 10px;
+           top: 50%;
+           color: #fff;
+           font-size: 32px;
+           transform: translateY(-50%);
+           cursor: pointer;
+       }
+    }
+    .menu-page__list {
+        .active {
+            transform: translateX(0);
+            right: 0;
+        }
+    }
+
+}
+
+
+// end menu-page

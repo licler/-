@@ -158,6 +158,9 @@
     &__item:first-child {
         margin-right: 30px;
     }
+    span {
+        display: none;
+    }
 }
 .menu-page__item:hover {
     background-color:#ABAAAA;
