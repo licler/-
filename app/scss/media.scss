@@ -1,38 +1,85 @@
 // start menu-page
 @media (max-width: 1175px) {
-    .menu-page__list{
+    .menu-page__list {
         margin-left: 0;
         margin-right: 0;
     }
 }
+
 @media (max-width: 930px) {
-    .menu-page__list{
+    .menu-page__list {
         font-size: 12px;
     }
 
 }
-@media (max-width: 840px) {
-    .menu-page{
+
+@media (max-width: 720px) {
+    .menu-page {
         position: relative;
-       span {
-           display: block;
-           position: absolute;
-           right: 10px;
-           top: 50%;
-           color: #fff;
-           font-size: 32px;
-           transform: translateY(-50%);
-           cursor: pointer;
-       }
-    }
-    .menu-page__list {
-        .active {
+
+        // &__btn {
+        //     display: none;
+        //     position: absolute;
+        //     right: 10px;
+        //     top: 50%;
+        //     color: #fff;
+        //     font-size: 32px;
+        //     transform: translateY(-50%);
+        //     cursor: pointer;
+        // }
+
+        &__list {
+            transform: translateX(150%);
+            transition: all 1s;
+        }
+
+        &__list.active {
             transform: translateX(0);
             right: 0;
+            left: 100%;
+            z-index: 2;
+
+        }
+
+        &__btn {
+            display: none;
+            background-color: $bg;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            transform: translateY(-50%);
+            top: 50%;
+            cursor: pointer;
+            z-index: 6;
+        }
+
+        &__btn.icon-map2::before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: #fff;
         }
     }
+
+
+
 
 }
 
 
 // end menu-page
+
+// start slider-page
+@media (max-width: 750px) {
+    .container {
+        padding: 0;
+    }
+}
+
+
+
+// end slider-page

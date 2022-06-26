@@ -78,6 +78,7 @@ function stylesLibs() {
 		'node_modules/slick-carousel/slick/slick.css',
 		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
 		'node_modules/rateyo/src/jquery.rateyo.css'
+		// 'node_modules/font-awesome/css/font-awesome.css'
 		// 'node_modules/animate.css/animate.css'
 	])
 		.pipe(scss({
