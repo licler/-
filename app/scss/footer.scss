@@ -79,40 +79,40 @@
 
     &__inner-name {
         font-family: "BwModelicaBold";
+        position: relative;
+    }
+
+    &__inner-name::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/clock.png);
+        width: 15px;
+        height: 12px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &__inner-work {
-        position: relative;
         padding-left: 25px;
         margin-bottom: 10px;
-
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(../img/footer/clock.png);
-            width: 15px;
-            height: 12px;
-            left: 0;
-            top: 13px
-        }
     }
 
     &__inner-info {
         position: relative;
         padding-left: 22px;
         margin-bottom: 15px;
-
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(../img/footer/map.png);
-            width: 15px;
-            height: 15px;
-            left: -4px;
-            top: 13px
-        }
     }
 
+    // &__inner-info::before {
+    //     position: absolute;
+    //     content: "";
+    //     background-image: url(../img/footer/map.png);
+    //     width: 15px;
+    //     height: 15px;
+    //     left: -4px;
+    //     top: 13px
+    // }
     &__inner-address {
         width: 155;
         height: 30px;
@@ -123,15 +123,16 @@
         padding-left: 25px;
         margin-bottom: 10px;
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(../img/footer/phone.png);
-            width: 18px;
-            height: 15px;
-            left: 0;
-            top: 0px
-        }
+    }
+
+    &__inner-phone::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/phone.png);
+        width: 18px;
+        height: 15px;
+        left: 0;
+        top: 0px
     }
 
     &__inner-tel {
@@ -139,20 +140,19 @@
         display: block;
     }
 
-    &__inner-email {
+    &__inner-name__email {
         position: relative;
         padding-left: -12px;
+    }
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(../img/footer/email.svg);
-            width: 16px;
-            height: 16px;
-            left: -25px;
-            top: 0px
-        }
-
+    &__inner-name__email::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/email.svg);
+        width: 16px;
+        height: 16px;
+        left: -25px;
+        top: 0px
     }
 
     &__copi {
@@ -166,6 +166,7 @@
         align-items: center;
         justify-content: center;
     }
+
     &__copi-link {
         text-decoration: underline;
     }

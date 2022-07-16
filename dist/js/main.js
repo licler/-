@@ -127,7 +127,24 @@ $('.reviews__items').slick({
        slidesToShow: 2,
        slidesToScroll: 2,
        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
-       nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>'
+       nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
+       responsive: [
+              {
+                breakpoint: 1130,
+                settings: {
+                autoplaySpeed: 3000,
+                arrows: false
+                }
+              },
+              {
+              breakpoint: 1065,
+              settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+              }
+       }
+]
 });
 
 ///////////////////////////////////////////////////////////
