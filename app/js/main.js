@@ -151,11 +151,13 @@ $('.reviews__items').slick({
 
 });
 
-// media/////////////////////////////////////////////////
+// media///////////////////////////////////////////////// menu-page
 $('.menu-page__btn').on('click', function(){
 $('.menu-page__list').toggleClass('active')
-
 });
 
-
+// header
+$('.menu__big-btn').on('click', function(){
+$('.header__list').toggleClass('active')
+});
 ///////////////////////////////////////////////////////

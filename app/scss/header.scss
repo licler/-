@@ -134,7 +134,9 @@
         margin-right: 20px;
     }
 }
-
+.menu-page__wrapper {
+    display: none;
+}
 .menu-page {
     background-color: $bg;
     margin-bottom: 17px;
@@ -149,6 +151,7 @@
         font-family: "BwModelicaBold";
         font-size: 14px;
         line-height: 16.8px;
+        z-index: 52;
     }
 
     &__item+.menu-page__item {
@@ -163,14 +166,16 @@
     }
     &__item:hover {
         background-color:#ABAAAA;
-        padding: 12px;
+        padding: 10px;
         transition: all 0.4s cubic-bezier(0.29, 0.79, 1, 1);
     }
     &__btn {
         display: none;
     }
 }
-
+.menu__big-btn {
+    display: none;
+}
 
 
 .search {

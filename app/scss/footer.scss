@@ -79,23 +79,21 @@
 
     &__inner-name {
         font-family: "BwModelicaBold";
+    }
+    &__inner-work {
+        padding-left: 25px;
+        margin-bottom: 10px;
         position: relative;
     }
-
-    &__inner-name::before {
+    &__inner-work::before {
         position: absolute;
         content: "";
         background-image: url(../img/footer/clock.png);
         width: 15px;
         height: 12px;
         left: 0;
-        top: 50%;
+        top: 20%;
         transform: translateY(-50%);
-    }
-
-    &__inner-work {
-        padding-left: 25px;
-        margin-bottom: 10px;
     }
 
     &__inner-info {
@@ -104,25 +102,24 @@
         margin-bottom: 15px;
     }
 
-    // &__inner-info::before {
-    //     position: absolute;
-    //     content: "";
-    //     background-image: url(../img/footer/map.png);
-    //     width: 15px;
-    //     height: 15px;
-    //     left: -4px;
-    //     top: 13px
-    // }
+    &__inner-info::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/map.png);
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        top: 24%;
+        transform: translateY(-50%);
+    }
     &__inner-address {
-        width: 155;
         height: 30px;
     }
 
     &__inner-phone {
         position: relative;
-        padding-left: 25px;
+        padding-left: 24px;
         margin-bottom: 10px;
-
     }
 
     &__inner-phone::before {
@@ -132,27 +129,30 @@
         width: 18px;
         height: 15px;
         left: 0;
-        top: 0px
+        top: 24%;
+        transform: translateY(-50%);
     }
 
     &__inner-tel {
         width: 107px;
         display: block;
+        margin: 0 auto;
     }
 
-    &__inner-name__email {
+    &__inner-email {
         position: relative;
-        padding-left: -12px;
+        padding-left: 25px;
     }
 
-    &__inner-name__email::before {
+    &__inner-email::before {
         position: absolute;
         content: "";
         background-image: url(../img/footer/email.svg);
         width: 16px;
         height: 16px;
-        left: -25px;
-        top: 0px
+        left: 0;
+        top: 40%;
+        transform: translateY(-50%);
     }
 
     &__copi {
