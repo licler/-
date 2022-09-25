@@ -44,7 +44,8 @@
         color: #fff;
     }
 .header__list-link:hover {
-    color: rgb(205, 227, 35);
+        color: #F2994A;
+        transition: all .3s;
 
 }
     &__top-lock {
@@ -165,9 +166,9 @@
         display: none;
     }
     &__item:hover {
-        background-color:#ABAAAA;
-        padding: 10px;
-        transition: all 0.4s cubic-bezier(0.29, 0.79, 1, 1);
+        color: #F2994A;
+        transition: all .3s;
+       
     }
     &__btn {
         display: none;

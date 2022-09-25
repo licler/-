@@ -73,7 +73,6 @@
         top: 155px;
         color: #fff;
         padding: 20px;
-        text-align: center;
         z-index: 150;
         transition: all 1s;
         left: -10px;
@@ -220,7 +219,7 @@
         top: 38px;
         transform: translateX(218%);
         transition: all 1s;
-        
+        display: block;
     }
     .menu-page__list {
         position: absolute;
@@ -233,9 +232,11 @@
         background-color: $bg;
         height: 280px;
         margin: 0 auto;
-        text-align: center;
         // transform: translateX(218%);
         transition: all 1s;
+    }
+    .menu-page__list li {
+        display: block;
     }
 
     .menu-page__item:first-child {
@@ -461,8 +462,8 @@
         margin-bottom: 50px;
     }
 
-    .news__item+.news__item {
-        margin-right: 30px;
+    .news__items{
+        margin-bottom: 30px;
     }
 
     .news__article {
