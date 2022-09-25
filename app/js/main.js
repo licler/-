@@ -1,17 +1,5 @@
 $(function(){
- ///////////////////////////////////////////////////////////////      
-// Меню
-
-// $('.header__list-link').mouseenter(function(){
-//  $(this).css('text-decoration', 'underline');
-// });
-// $('.header__list-link').mouseleave(function(){
-//        $(this).css('text-decoration', 'none');   
-// });
-
-/////////////////////////////////////////////////////////////
-
-
+    
 //слайдер/////////////////////////////////////
  $('.slider__items').slick({	
         arrows: true,
@@ -34,7 +22,8 @@ $(function(){
         ]
  });
 
-/////////////////////////////////////////////
+
+
 
  // рейтинг////////////////////////////////////
 
@@ -44,49 +33,15 @@ $(".rate-star").rateYo({
      });
 	
 
-/////////////////////////////////////////////////////////////////////////
 
 // Каталог палитры//////////////////////////////////////////////////////////////
 
+$('.catalog__palitra-btn').on('click', function(evt){
+       $('.catalog__palitra-wrapper').removeClass('catalog__palitra-wrapper--active');    
+       evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
+       // $('.catalog__palitra-wrapper--active').slideToggle(1000);
+});
 
-
-
-// if($('.btn-open').html() == 'Показать все') {
-//        $('.btn-open').html('Скрыть все');
-// }
-// else $('.btn-open').html('Показать все');
-// return false;
-//  });
-
-// });
-
-
-// $('.catalog__palitra-btn').on('click', function(evt){
-//        $('.catalog__palitra-wrapper').removeClass('catalog__palitra-wrapper--active');    
-//        evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
-//        // $('.catalog__palitra-wrapper--active').slideToggle(1000);
-// });
-//  $('.catalog__btn').click(function(){
-//  $('.catalog__news-wrapper').toggleClass('catalog__news-wrapper--active');
-
-//  });
-
-$('.catalog__palitra-btn').on('click', function(event){
-  $('.catalog__palitra-wrapper').removeClass('catalog__news-wrapper--active');
-  evt.currentTarget.previousElementSibling.classList.toggle('catalog__palitra-wrapper--active');
-})
-// $('.catalog__palitra-btn').on('click', function(event){
-//        $('.catalog__palitra-wrapper').addClass('catalog__news-wrapper--active');
-     
-//      })
-
-
-
-////////////////////////////////////////////////////////////////////////
-
-// $('.catalog__palitra-btn').on('click', function(){
-// $('.catalog__palitra-wrapper').addClass('catalog__palitra-wrapper--active');
-// });
 
 
 //кнопка активности/////////////////////////////////////////
@@ -101,7 +56,6 @@ $('.catalog__item').addClass('active');
 $('.catalog__filter-move').addClass('active');
 $('.catalog__filter-list').removeClass('active');
 });
-////////////////////////////////////////////////////////////
 
 
 // Партнеры////////////////////////////////////////////////////
@@ -116,7 +70,7 @@ $('.parthner__btn').click(function(){
        else $('.parthner__btn-open').html('Показать все');
        return false;
 });
-///////////////////////////////////////////////////////////////
+
 
 
 // слайдер цитат/////////////////////////////////////////////
@@ -147,15 +101,14 @@ $('.reviews__items').slick({
 ]
 });
 
-///////////////////////////////////////////////////////////
+
 
 });
 
 // menu-page
 $('.menu-page__btn').on('click', function(){
-$('.menu-page__list').toggleClass('active')
+$('.menu-page__list').toggleClass('active');
 });
-
 
 
 // header
@@ -163,4 +116,6 @@ $('.menu-page__list').toggleClass('active')
 $('.menu__big-btn').on('click', function(){
 $('.header__list').toggleClass('active')
 });
+
+
 ///////////////////////////////////////////////////////

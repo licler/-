@@ -2,7 +2,6 @@
 
 .header {
     background-color: #fff;
-
     &__top {
         display: flex;
         height: 30px;
@@ -39,14 +38,13 @@
         font-family: "BwModelicaBold";
     }
     .header__top-link:hover {
-        transition: .8s;
-        background-color: $bg;
+        background-color:#F2994A;
+        transition: all .3s;
         color: #fff;
     }
 .header__list-link:hover {
         color: #F2994A;
         transition: all .3s;
-
 }
     &__top-lock {
         margin-right: 13px;
@@ -135,17 +133,18 @@
         margin-right: 20px;
     }
 }
-.menu-page__wrapper {
-    display: none;
-}
+
+// .menu-page__wrapper {
+//     display: none;
+// }
 .menu-page {
     background-color: $bg;
     margin-bottom: 17px;
-
     &__list {
         margin-left: 138px;
         margin-right: 107px;
         display: flex;
+        justify-content: center;
         height: 40px;
         align-items: center;
         color: #FAFFFA;
@@ -173,6 +172,9 @@
     &__btn {
         display: none;
     }
+}
+.menu-page__list li + .menu-page__list li {
+    margin-right: 30px;   
 }
 .menu__big-btn {
     display: none;

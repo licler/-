@@ -55,7 +55,10 @@
     &__box-link--images {
        padding-right: 15px;
     }
-
+.catalog__box-link:hover {
+    background-color:#F2994A;
+    transition: all .3s;
+}
     &__box {
         display: flex;
         align-items: center;
@@ -358,8 +361,8 @@
     }
 
     .parthner__btn:hover {
-        background-color: $bg;
-        transition: .7s;
+        background-color:#F2994A;
+        transition: all .3s;
         color: #fff;
     }
 
