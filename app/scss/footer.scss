@@ -1,0 +1,187 @@
+// start footer
+.footer {
+    background-color: $bg;
+    padding: 30px 0px;
+
+    &__list {
+        display: flex;
+        height: 37px;
+        align-items: center;
+        margin-bottom: 47px;
+    }
+
+    &__list--instagram {
+        margin-bottom: -12px;
+    }
+
+    &__list-item+.footer__list-item {
+        margin-right: 12px;
+    }
+
+    &__list-item:first-child {
+        margin-right: 12px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 170px;
+        width: 100%;
+    }
+
+    &__item--catalog {
+        max-width: 93px;
+    }
+
+    &__item--infor {
+        max-width: 112px;
+    }
+
+    &__item--login {
+        max-width: 141px;
+    }
+
+    &__item--contact {
+        max-width: 165px;
+    }
+
+    &__title {
+        font-family: "BwModelicaBold";
+        color: #fff;
+        font-size: 16px;
+        line-height: 19.2px;
+        max-width: 170px;
+    }
+
+    &__menu {
+        font-family: "BwModelicaMedium";
+        font-size: 11px;
+        line-height: 13.2px;
+        color: #fff;
+    }
+
+    &__menu-link {
+        padding: 9px 0;
+        text-decoration: underline;
+    }
+    .footer__menu-link:hover {
+        color: #F2994A;
+        transition: all .3s;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        font-family: "BwModelicaMedium";
+        font-size: 11px;
+        line-height: 13.2px;
+        color: #fff;
+    }
+
+    &__inner-name {
+        font-family: "BwModelicaBold";
+    }
+    &__inner-work {
+        padding-left: 25px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    &__inner-work::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/clock.png);
+        width: 15px;
+        height: 12px;
+        left: 0;
+        top: 20%;
+        transform: translateY(-50%);
+    }
+
+    &__inner-info {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 15px;
+    }
+
+    &__inner-info::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/map.png);
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        top: 24%;
+        transform: translateY(-50%);
+    }
+    &__inner-address {
+        height: 30px;
+    }
+
+    &__inner-phone {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__inner-phone::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/phone.png);
+        width: 18px;
+        height: 15px;
+        left: 0;
+        top: 24%;
+        transform: translateY(-50%);
+    }
+
+    &__inner-tel {
+        width: 107px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__inner-email {
+        position: relative;
+        padding-left: 25px;
+    }
+
+    &__inner-email::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/footer/email.svg);
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    &__copi {
+        height: 60px;
+        background-color: #D9E6CC;
+        font-size: 12px;
+        line-height: 14.4px;
+        text-align: center;
+        color: $bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__copi-link {
+        text-decoration: underline;
+    }
+
+
+}
+.footer__list--instagram:hover,
+.footer__list--facebook:hover,
+.footer__list--bk:hover,
+.footer__list--ok:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 105);  
+}
+
+// end footer

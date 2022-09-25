@@ -9,9 +9,11 @@
   "author": "Licler",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "animate.css": "^4.1.1",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
+    "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
@@ -31,6 +33,7 @@
     "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1",
     "webp-converter": "^2.2.3",
     "wow.js": "^1.2.2"

@@ -4,22 +4,1149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/libs.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
     <title>SitVis</title>
-    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            
-        </div>
-    </header>
+    @@include('header.html',{})
     <div class="wrapper">
-        <main class="main"></main>
-        <footer class="footer"></footer>
-    </div>
+        <main class="main">
+            <section class="slider-page">
+                <div class="container">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="img/content/slider-1.jpg" alt="slider">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="img/content/slider-1.jpg" alt="slider">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="img/content/slider-1.jpg" alt="slider">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="img/content/slider-1.jpg" alt="slider">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="img/content/slider-1.jpg" alt="slider">
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <div class="info__items">
+                        <div class="info__item">
+                            <a class="info__item-box" href="#">
+                                <img class="info__item-images" src="img/content/info-1.svg" alt="info">
+                            </a>
+                            <a class="info__item-name" href="#">Только натуральный состав</a>
+                        </div>
+                        <div class="info__item">
+                            <a class="info__item-box" href="#">
+                                <img class="info__item-images" src="img/content/info-2.png" alt="info">
+                            </a>
+                            <a class="info__item-name" href="#">Актуальное наличие на сайте</a>
+                        </div>
+                        <div class="info__item">
+                            <a class="info__item-box" href="#">
+                                <img class="info__item-images" src="img/content/info-3.png" alt="info">
+                            </a>
+                            <a class="info__item-name" href="#">Быстрая отправка</a>
+                        </div>
+                        <div class="info__item">
+                            <a class="info__item-box" href="#">
+                                <img class="info__item-images" src="img/content/info-4.png" alt="info">
+                            </a>
+                            <a class="info__item-name" href="#">Удобное расположение</a>
+                        </div>
+                        <div class="info__item">
+                            <a class="info__item-box" href="#">
+                                <img class="info__item-images" src="img/content/info-5.png" alt="info">
+                            </a>
+                            <a class="info__item-name" href="#">Помощь в подборе товаров</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="presentation">
+                <div class="container">
+                    <div class="presentation__wrapper">
+                        <div class="presentation__box">
+                            <h2 class="presentation__box-title">
+                                ДОБРО ПОЖАЛОВАТЬ В НАШ НОВЫЙ МАГАЗИН!
+                            </h2>
+                            <div class="presentation__box-content">
+                                <p class="presentation__box-text">
+                                    Мы садимся вязать, и вселенная вокруг начинает жить по-другому. Точнее, мы создаем
+                                    собственную вселенную, в которой мы отдыхаем, вдохновляемся и создаем шедевры.
+                                    Наш магазин за то, чтобы вы занимались своим любимым делом с удовольствием. Наш
+                                    магазин – это место, где вам предложат пряжу и инструмент исключительного качества
+                                    для создания лучших творений, которые вы только задумали. Наш магазин – это место,
+                                    куда вы просто можете прийти поболтать и выпить чашечку кофе за вязанием
+                                </p>
+                                <a class="presentation__box-link" href="#">
+                                    Узнать о нас больше
+                                </a>
+                            </div>
+                        </div>
+                        <div class="presentation__info">
+                            <img class="presentation__info-images" src="img/content/presentation.jpg"  alt="presentation">
+                            <a class="presentation__info-link" data-fancybox href="https://www.youtube.com/watch?v=kSUxuo8WvGI&   feature=emb_logo">
+                                <img class="presentation__button" src="img/content/presentation-button.svg" alt="button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__wrapper">
+                        <div class="catalog__share">
+                            <div class="catalog__box">
+                                <a class="catalog__box-link" href="#"><img class="catalog__box-link--images" src="img/content/boxlink.svg" alt="boxlink">
+                                    <span>Новинки</span>
+                                </a>
+                                <a class="catalog__box-discont" href="#"><img class="catalog__box-link--images"  src="img/content/boxdis.svg" alt="boxdis">
+                                    <span>Скидки</span>
+                                </a>
+                                <div class="catalog__box-inner">
+                                    <a class="catalog__box-popular" href="#">
+                                        <img class="catalog__box-link--images" src="img/content/boxpop.svg"    alt="boxpop">
+                                        Популярные
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="catalog__buttons">
+                                <button class="catalog__filter-setting">
+                                    <span class="catalog__filter-move">
+                                        <img  class="catalog__filter-icons" src="img/content/line.svg" alt="line">
+                                    </span>
+                                </button>
+                                <button class="catalog__filter-setting">
+                                    <span class="catalog__filter-move">
+                                        <img  class="catalog__filter-icons" src="img/content/line_2.svg" alt="line">
+                                    </span>
+                                </button>
+                            </div> -->
+                        </div>
+                        <div class="catalog__items">
+                            <div class="catalog__item">
+                                <div class="catalog__item-info">
+                                    <div class="catalog__item-box">
+                                        <button class="catalog__item-btn" type="text">
+                                            <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                        </button>
+                                        <a class="catalog__item-link" href="#">
+                                            <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                        </a>
+                                    </div>
+                                    <div class="catalog__item-star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-content">
+                                    <div class="catalog__special catalog__special--news">
+                                        <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                    </div>
+                                    <div class="catalog__sitvis">
+                                        <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                    </div>
+                                    <h3 class="catalog__title">
+                                        COTTON-MERINO
+                                    </h3>
+                                    <div class="catalog__palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                    </div>
+                                    <div class="catalog__palitra-wrapper">
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                        </div>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                        </div>
+
+
+                                        
+                                    </div>
+                                    <button class="catalog__palitra-btn">
+                                        <span class="btn-open">Показать все</span>
+                                    </button>
+                                    <div class="catalog__info">
+                                        <p class="catalog__desc">
+                                            Schachenmayr Regia
+                                        </p>
+                                        <p class="catalog__comp">
+                                            60% Кидмохер, 33 % Бамбук,
+                                            7% Люрекс
+                                        </p>
+                                        <p class="catalog__comp">
+                                            50г./210м.
+                                        </p>
+                                        <a class="catalog__price" href="#">1500 р</a>
+                                    </div>
+                                    <a class="catalog__goods-back" href="#">К товару</a>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-info">
+                                    <div class="catalog__item-box">
+                                        <button class="catalog__item-btn" type="text">
+                                            <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                        </button>
+                                        <a class="catalog__item-link" href="#">
+                                            <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                        </a>
+                                    </div>
+                                    <div class="catalog__item-star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-content">
+                                    <div class="catalog__special catalog__special--news">
+                                        <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                    </div>
+                                    <div class="catalog__sitvis">
+                                        <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                    </div>
+                                    <h3 class="catalog__title">
+                                        COTTON-MERINO
+                                    </h3>
+                                    <div class="catalog__palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                    </div>
+                                    <div class="catalog__palitra-wrapper">
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+   
+                                        </div>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                              
+    
+                                        </div>
+                                    </div>
+                                    <button class="catalog__palitra-btn">
+                                        <span class="btn-open">Показать все</span>
+                                        <span style="display: none;" class="btn-close">Скрыть все</span>
+                                    </button>
+                                    <div class="catalog__info">
+                                        <p class="catalog__desc">
+                                            Schachenmayr Regia
+                                        </p>
+                                        <p class="catalog__comp">
+                                            60% Кидмохер, 33 % Бамбук,
+                                            7% Люрекс
+                                        </p>
+                                        <p class="catalog__comp">
+                                            50г./210м.
+                                        </p>
+                                        <a class="catalog__price" href="#">1500 р</a>
+                                    </div>
+                                    <a class="catalog__goods-back" href="#">К товару</a>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-info">
+                                    <div class="catalog__item-box">
+                                        <button class="catalog__item-btn" type="text">
+                                            <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                        </button>
+                                        <a class="catalog__item-link" href="#">
+                                            <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                        </a>
+                                    </div>
+                                    <div class="catalog__item-star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-content">
+                                    <div class="catalog__special catalog__special--news">
+                                        <img class="catalog__special-images" src="img/content/special_1.svg"   alt="special">
+                                          
+                                    </div>
+                                    <div class="catalog__sitvis">
+                                        <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                    </div>
+                                    <h3 class="catalog__title">
+                                        COTTON-MERINO
+                                    </h3>
+                                    <div class="catalog__palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                       <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+
+                                    </div>
+                                    <div class="catalog__palitra-wrapper">
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+    
+                                        </div>
+
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                        </div>
+                                    </div>
+                                    <button class="catalog__palitra-btn">
+                                        <span class="btn-open">Показать все</span>
+                                        <span style="display: none;" class="btn-close">Скрыть все</span>
+                                    </button>
+                                    <div class="catalog__info">
+                                        <p class="catalog__desc">
+                                            Schachenmayr Regia
+                                        </p>
+                                        <p class="catalog__comp">
+                                            60% Кидмохер, 33 % Бамбук,
+                                            7% Люрекс
+                                        </p>
+                                        <p class="catalog__comp">
+                                            50г./210м.
+                                        </p>
+                                        <a class="catalog__price" href="#">1500 р</a>
+                                    </div>
+                                    <a class="catalog__goods-back" href="#">К товару</a>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-info">
+                                    <div class="catalog__item-box">
+                                        <button class="catalog__item-btn" type="text">
+                                            <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                        </button>
+                                        <a class="catalog__item-link" href="#">
+                                            <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                        </a>
+                                    </div>
+                                    <div class="catalog__item-star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-content">
+                                    <div class="catalog__special catalog__special--news">
+                                        <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                           
+                                    </div>
+                                    <div class="catalog__sitvis">
+                                        <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                    </div>
+                                    <h3 class="catalog__title">
+                                        COTTON-MERINO
+                                    </h3>
+                                    <div class="catalog__palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                        <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+
+                                    </div>
+                                    <div class="catalog__palitra-wrapper">
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                           <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                              
+    
+                                        </div>
+
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                           <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+    
+                                        </div>
+                                    </div>
+                                    <button class="catalog__palitra-btn">
+                                        <span class="btn-open">Показать все</span>
+                                        <span style="display: none;" class="btn-close">Скрыть все</span>
+                                    </button>
+                                    <div class="catalog__info">
+                                        <p class="catalog__desc">
+                                            Schachenmayr Regia
+                                        </p>
+                                        <p class="catalog__comp">
+                                            60% Кидмохер, 33 % Бамбук,
+                                            7% Люрекс
+                                        </p>
+                                        <p class="catalog__comp">
+                                            50г./210м.
+                                        </p>
+                                        <a class="catalog__price" href="#">1500 р</a>
+                                    </div>
+                                    <a class="catalog__goods-back" href="#">К товару</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__news-wrapper">
+                            <div class="catalog__items">
+                                <div class="catalog__item">
+                                    <div class="catalog__item-info">
+                                        <div class="catalog__item-box">
+                                            <button class="catalog__item-btn" type="text">
+                                                <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                            </button>
+                                            <a class="catalog__item-link" href="#">
+                                                <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                            </a>
+                                        </div>
+                                        <div class="catalog__item-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__item-content">
+                                        <div class="catalog__special catalog__special--news">
+                                            <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                        </div>
+                                        <div class="catalog__sitvis">
+                                            <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                        </div>
+                                        <h3 class="catalog__title">
+                                            COTTON-MERINO
+                                        </h3>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                        </div>
+                                        <div class="catalog__palitra-wrapper">
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                            </div>
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"  alt="palitra">
+                                            </div>
+    
+    
+                                            
+                                        </div>
+                                        <button class="catalog__palitra-btn">
+                                            <span class="btn-open">Показать все</span>
+                                        </button>
+                                        <div class="catalog__info">
+                                            <p class="catalog__desc">
+                                                Schachenmayr Regia
+                                            </p>
+                                            <p class="catalog__comp">
+                                                60% Кидмохер, 33 % Бамбук,
+                                                7% Люрекс
+                                            </p>
+                                            <p class="catalog__comp">
+                                                50г./210м.
+                                            </p>
+                                            <a class="catalog__price" href="#">1500 р</a>
+                                        </div>
+                                        <a class="catalog__goods-back" href="#">К товару</a>
+                                    </div>
+                                </div>
+    
+                                <div class="catalog__item">
+                                    <div class="catalog__item-info">
+                                        <div class="catalog__item-box">
+                                            <button class="catalog__item-btn" type="text">
+                                                <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                            </button>
+                                            <a class="catalog__item-link" href="#">
+                                                <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                            </a>
+                                        </div>
+                                        <div class="catalog__item-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__item-content">
+                                        <div class="catalog__special catalog__special--news">
+                                            <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                        </div>
+                                        <div class="catalog__sitvis">
+                                            <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                        </div>
+                                        <h3 class="catalog__title">
+                                            COTTON-MERINO
+                                        </h3>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                        </div>
+                                        <div class="catalog__palitra-wrapper">
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+       
+                                            </div>
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                                  
+        
+                                            </div>
+                                        </div>
+                                        <button class="catalog__palitra-btn">
+                                            <span class="btn-open">Показать все</span>
+                                            <span style="display: none;" class="btn-close">Скрыть все</span>
+                                        </button>
+                                        <div class="catalog__info">
+                                            <p class="catalog__desc">
+                                                Schachenmayr Regia
+                                            </p>
+                                            <p class="catalog__comp">
+                                                60% Кидмохер, 33 % Бамбук,
+                                                7% Люрекс
+                                            </p>
+                                            <p class="catalog__comp">
+                                                50г./210м.
+                                            </p>
+                                            <a class="catalog__price" href="#">1500 р</a>
+                                        </div>
+                                        <a class="catalog__goods-back" href="#">К товару</a>
+                                    </div>
+                                </div>
+    
+                                <div class="catalog__item">
+                                    <div class="catalog__item-info">
+                                        <div class="catalog__item-box">
+                                            <button class="catalog__item-btn" type="text">
+                                                <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                            </button>
+                                            <a class="catalog__item-link" href="#">
+                                                <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                            </a>
+                                        </div>
+                                        <div class="catalog__item-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__item-content">
+                                        <div class="catalog__special catalog__special--news">
+                                            <img class="catalog__special-images" src="img/content/special_1.svg"   alt="special">
+                                              
+                                        </div>
+                                        <div class="catalog__sitvis">
+                                            <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                        </div>
+                                        <h3 class="catalog__title">
+                                            COTTON-MERINO
+                                        </h3>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                           <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+    
+                                        </div>
+                                        <div class="catalog__palitra-wrapper">
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+        
+                                            </div>
+    
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                            </div>
+                                        </div>
+                                        <button class="catalog__palitra-btn">
+                                            <span class="btn-open">Показать все</span>
+                                            <span style="display: none;" class="btn-close">Скрыть все</span>
+                                        </button>
+                                        <div class="catalog__info">
+                                            <p class="catalog__desc">
+                                                Schachenmayr Regia
+                                            </p>
+                                            <p class="catalog__comp">
+                                                60% Кидмохер, 33 % Бамбук,
+                                                7% Люрекс
+                                            </p>
+                                            <p class="catalog__comp">
+                                                50г./210м.
+                                            </p>
+                                            <a class="catalog__price" href="#">1500 р</a>
+                                        </div>
+                                        <a class="catalog__goods-back" href="#">К товару</a>
+                                    </div>
+                                </div>
+    
+                                <div class="catalog__item">
+                                    <div class="catalog__item-info">
+                                        <div class="catalog__item-box">
+                                            <button class="catalog__item-btn" type="text">
+                                                <img class="catalog__item-images" src="img/content/hearth.svg" alt="hearth">
+                                            </button>
+                                            <a class="catalog__item-link" href="#">
+                                                <img class="catalog__item-images" src="img/content/graff.svg" alt="graff">
+                                            </a>
+                                        </div>
+                                        <div class="catalog__item-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__item-content">
+                                        <div class="catalog__special catalog__special--news">
+                                            <img class="catalog__special-images" src="img/content/special_1.svg"  alt="special">
+                                               
+                                        </div>
+                                        <div class="catalog__sitvis">
+                                            <img class="catalog__sitvis-images" src="img/content/sitvis_1.png" alt="sitvis">
+                                        </div>
+                                        <h3 class="catalog__title">
+                                            COTTON-MERINO
+                                        </h3>
+                                        <div class="catalog__palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_5.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                            <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+    
+                                        </div>
+                                        <div class="catalog__palitra-wrapper">
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                               <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+                                                  
+        
+                                            </div>
+    
+                                            <div class="catalog__palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_1.png"   alt="palitra">
+                                               <img class="catalog__palitra-images" src="img/content/palitra_2.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_3.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_4.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_6.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_7.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_8.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_9.png"   alt="palitra">
+                                                <img class="catalog__palitra-images" src="img/content/palitra_10.png"   alt="palitra">
+        
+                                            </div>
+                                        </div>
+                                        <button class="catalog__palitra-btn">
+                                            <span class="btn-open">Показать все</span>
+                                            <span style="display: none;" class="btn-close">Скрыть все</span>
+                                        </button>
+                                        <div class="catalog__info">
+                                            <p class="catalog__desc">
+                                                Schachenmayr Regia
+                                            </p>
+                                            <p class="catalog__comp">
+                                                60% Кидмохер, 33 % Бамбук,
+                                                7% Люрекс
+                                            </p>
+                                            <p class="catalog__comp">
+                                                50г./210м.
+                                            </p>
+                                            <a class="catalog__price" href="#">1500 р</a>
+                                        </div>
+                                        <a class="catalog__goods-back" href="#">К товару</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <button class="catalog__btn">
+                            <img class="catalog__box-link--images" src="img/content/boxlink.svg" alt="boxlink">
+                            Все новинки
+                        </button>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="parthner">
+                <div class="container">
+                    <div class="parthner__wrapper">
+                        <h3 class="parthner__title">НАШИ БРЕНДЫ</h3>
+                        <div class="parthner__content">
+                            <p class="parthner__text">
+                                Мы садимся вязать, и вселенная вокруг начинает жить по-другому. Точнее, мы создаем
+                                собственную вселенную, в которой мы отдыхаем, вдохновляемся
+                                и создаем шедевры. Наш магазин за то, чтобы вы занимались своим любимым делом с
+                                удовольствием. Наш магазин – это место, где вам предложат пряжу
+                            </p>
+                        </div>
+                        <div class="parthner__items">
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_1.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Borgo de Pazzi</a>
+                            </div>
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_3.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Schachenmayr Regia</a>
+                            </div>
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_5.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Sandnes Garn</a>
+                            </div>
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_7.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Infinity.Design</a>
+                            </div>
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_9.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Holst Garn</a>
+                            </div>
+                            <div class="parthner__item">
+                                <a class="parthner__item-link" href="#">
+                                    <img src="img/content/parthner_11.png" alt="parthner" class="parthner__item-images">
+                                </a>
+                                <a class="parthner__item-name" href="#">Casagrande</a>
+                            </div>
+                        </div>
+                        <div class="parthner__inner">
+                            <div class="parthner__items">
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img class="parthner__item-images" src="img/content/parthner_1.png"  alt="parthner">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Borgo de Pazzi</a>
+                                </div>
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img src="img/content/parthner_3.png" alt="parthner" class="parthner__item-images">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Schachenmayr Regia</a>
+                                </div>
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img src="img/content/parthner_5.png" alt="parthner"  class="parthner__item-images">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Sandnes Garn</a>
+                                </div>
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img src="img/content/parthner_7.png" alt="parthner" class="parthner__item-images">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Infinity.Design</a>
+                                </div>
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img src="img/content/parthner_9.png" alt="parthner" class="parthner__item-images">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Holst Garn</a>
+                                </div>
+                                <div class="parthner__item">
+                                    <a class="parthner__item-link" href="#">
+                                        <img src="img/content/parthner_11.png" alt="parthner" class="parthner__item-images">
+                                    </a>
+                                    <a class="parthner__item-name" href="#">Casagrande</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="parthner__btn">
+                            <span class="parthner__btn-open">Показать все</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__wrapper">
+                        <div class="reviews__title">
+                            ОТЗЫВЫ
+                        </div>
+                        <div class="reviews__items">
+                            <div class="reviews__item">
+                                <div class="reviews__profile">
+                                    <div class="reviews__profile-title">
+                                        Mr. Knitkin
+                                    </div>
+                                    <a class="reviews__profile-avatar" href="#">
+                                        <img class="reviews__profile-images" src="img/content/avatar.jpg" alt="avatar">
+                                    </a>
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__share">
+                                        <div class="reviews__share-date">
+                                            01. 05. 2021
+                                        </div>
+                                        <div class="reviews__share-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <p class="reviews__box-text">
+                                            Не могя остановиться, вяжу и вяжу как заведенный, и это все благодаря
+                                            магазину. Эти демоны снабжают меня всем необходимым, не выходя из дома.
+                                            Красавчики.
+                                        </p>
+                                    </div>
+                                    <a class="reviews__item-link" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__profile">
+                                    <div class="reviews__profile-title">
+                                        Mr. Knitkin
+                                    </div>
+                                    <a class="reviews__profile-avatar" href="#">
+                                        <img class="reviews__profile-images" src="img/content/avatar.jpg" alt="avatar">
+                                    </a>
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__share">
+                                        <div class="reviews__share-date">
+                                            01. 05. 2021
+                                        </div>
+                                        <div class="reviews__share-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <p class="reviews__box-text">
+                                            Не могя остановиться, вяжу и вяжу как заведенный, и это все благодаря
+                                            магазину. Эти демоны снабжают меня всем необходимым, не выходя из дома.
+                                            Красавчики.
+                                        </p>
+                                    </div>
+                                    <a class="reviews__item-link" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__profile">
+                                    <div class="reviews__profile-title">
+                                        Mr. Knitkin
+                                    </div>
+                                    <a class="reviews__profile-avatar" href="#">
+                                        <img class="reviews__profile-images" src="img/content/avatar.jpg" alt="avatar">
+                                    </a>
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__share">
+                                        <div class="reviews__share-date">
+                                            01. 05. 2021
+                                        </div>
+                                        <div class="reviews__share-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <p class="reviews__box-text">
+                                            Не могя остановиться, вяжу и вяжу как заведенный, и это все благодаря
+                                            магазину. Эти демоны снабжают меня всем необходимым, не выходя из дома.
+                                            Красавчики.
+                                        </p>
+                                    </div>
+                                    <a class="reviews__item-link" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__profile">
+                                    <div class="reviews__profile-title">
+                                        Mr. Knitkin
+                                    </div>
+                                    <a class="reviews__profile-avatar" href="#">
+                                        <img class="reviews__profile-images" src="img/content/avatar.jpg" alt="avatar">
+                                    </a>
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__share">
+                                        <div class="reviews__share-date">
+                                            01. 05. 2021
+                                        </div>
+                                        <div class="reviews__share-star">
+                                            <div class="rate-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <p class="reviews__box-text">
+                                            Не могя остановиться, вяжу и вяжу как заведенный, и это все благодаря
+                                            магазину. Эти демоны снабжают меня всем необходимым, не выходя из дома.
+                                            Красавчики.
+                                        </p>
+                                    </div>
+                                    <a class="reviews__item-link" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__wrapper">
+                        <h2 class="news__title">
+                            НОВОСТИ МАГАЗИНА
+                        </h2>
+                        <div class="news__box">
+                            <div class="news__items">
+                                <div class="news__item">
+                                    <a class="news__item-link" href="#">
+                                        <img class="news__item-images" src="img/content/news_1.jpg" alt="news">
+                                    </a>
+                                    <div class="news__item-text">
+                                        <a class="news__item-text-link" href="#">
+                                            Слушайте, а вы смогли бы быть
+                                            мужчиной? Недавно посетила
+                                            меня такая мысль).
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <a class="news__item-link" href="#">
+                                        <img class="news__item-images" src="img/content/news_2.jpg" alt="news">
+                                    </a>
+                                    <div class="news__item-text">
+                                        <a class="news__item-text-link" href="#">
+                                            Слушайте, а вы смогли бы быть
+                                            мужчиной? Недавно посетила
+                                            меня такая мысль).
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <a class="news__item-link" href="#">
+                                        <img class="news__item-images" src="img/content/news_1.jpg" alt="news">
+                                    </a>
+                                    <div class="news__item-text">
+                                        <a class="news__item-text-link" href="#">
+                                            Слушайте, а вы смогли бы быть
+                                            мужчиной? Недавно посетила
+                                            меня такая мысль).
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__article">
+                                <h3 class="news__article-title">
+                                    СТАТЬИ
+                                </h3>
+                                <a class="news__article-link" href="#">
+                                    Про  то как гора родила мышь и другие приключения  креативщиков в интернете 
+                                </a>
+                                <a class="news__article-link" href="#">
+                                    Про  то как гора родила мышь и другие приключения  креативщиков в интернете 
+                                </a>
+                                <a class="news__article-link" href="#">
+                                    Про  то как гора родила мышь и другие приключения  креативщиков в интернете 
+                                </a>
+                                <a class="news__article-link" href="#">
+                                    Про  то как гора родила мышь и другие приключения  креативщиков в интернете 
+                                </a>
+                                <button class="news__article-btn" type="submit">
+                                    Все Статьи
+                                </button>
+                            </div>
+                        </div>
+                        <div class="news__sale">
+                            <div class="news__sale-wrapper">
+                                <h3 class="news__sale-title">
+                                    Дарим скидку 5%
+                                </h3>
+                                <p class="news__sale-text">
+                                    Будьте в курсе наших последних новостей и выпуска продукции, подписавшись на нашу рассылку
+                                </p>
+                            </div>
+                            <form class="news__sale-form">
+                                <input class="news__sale-input" type="text">
+                                <button class="news__sale-btn">
+                                    Подписаться
+                                </button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('footer.html',{})
+    </div>
+    <script type="text/javascript" src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

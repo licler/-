@@ -1,0 +1,525 @@
+// start catalog
+
+.catalog {
+    &__share {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    &__box-link {
+        max-width: 190px;
+        background-color: $bg;
+        border-radius: 30px;
+        padding: 7px 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    span {
+        margin-left: 10px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center
+    }
+
+    &__btn {
+        min-width: 150px;
+        background-color: $bg;
+        border-radius: 30px;
+        padding: 7px 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+    }
+    .catalog__btn:hover {
+        background-color:#F2994A;
+        transition: all .3s;
+    }
+    &__box-link--images {
+       padding-right: 15px;
+    }
+.catalog__box-link:hover {
+    background-color:#F2994A;
+    transition: all .3s;
+}
+    &__box {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 14.4px;
+ 
+    }
+
+    &__box-discont {
+        margin-left: 48px;
+        padding-right: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__box-inner {
+        position: relative;
+        margin-left: 50px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 22px;
+            width: 1px;
+            background-color: $bg;
+            left: -50px;
+        }
+    }
+
+    &__box-popular {
+        display: flex;
+        align-items: center;
+    }
+
+    &__filter-setting {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center
+    }
+
+
+    &__items {
+        margin-bottom: 52px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 266px;
+        background-color: #fff;
+        border: 1px solid $bg;
+        padding: 7px 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        }
+    }
+
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-left: 15px;  
+    }
+    .catalog__goods-back:hover {
+        background-color:#F2994A;
+        transition: all .3s;
+    }
+
+    &__item-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__special {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    &__special--news {
+        background-color: #F2994A;
+    }
+
+    &__sitvis {
+        margin-bottom: 9px;
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: $text;
+        line-height: 14.4px;
+    }
+
+    &__palitra {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__palitra-btn {
+        min-width: 90px;
+        border-radius: 30px;
+        border: 1px solid #D0D0D0;
+        padding: 5px 0;
+        background-color: #fff;
+        font-size: 10px;
+        line-height: 9.6px;
+        text-align: center;
+        font-weight: 500;
+        color: $text;
+        margin: 0 auto;
+        display: block;
+        padding-right: 26px;
+        padding-left: 10px;
+        margin-bottom: 19px;
+    }
+
+    &__palitra-wrapper {
+        display: none;
+    }
+
+    &__action {
+        display: block;
+    }
+
+    &__palitra-wrapper--active {
+        display: block;
+    }
+
+    .btn-open {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/down.png");
+            position: absolute;
+            top: 63%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+
+    .btn-close {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/up.png");
+            position: absolute;
+            top: 62%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__info {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__desc {
+        font-weight: 900;
+        font-size: 12px;
+        color: #000;
+    }
+
+    &__comp {
+        max-width: 131px;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12.8px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        margin-top: 15px;
+        border-radius: 180px;
+        background-color: #F9EDF0;
+        max-width: 160px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-bottom: 40px;
+    }
+
+    &__goods-back {
+        max-width: 130px;
+        background-color: $bg;
+        border-radius: 30px;
+        padding: 7px 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .catalog__news-wrapper {
+        display: none;
+    }
+
+    .catalog__news-wrapper--active {
+        display: block;
+    }
+}
+
+// start parthner
+.parthner {
+    margin-bottom: 48px;
+
+    &__wrapper {
+        padding-left: 70px;
+        padding-right: 40px;
+    }
+
+    &__title {
+        font-family: "BwModelicaBold";
+        font-size: 16px;
+        line-height: 19.2px;
+        color: $text;
+        margin-bottom: 22px;
+        margin-top: 50px;
+    }
+
+    &__content {
+        max-width: 995px;
+        width: 100%;
+        line-height: 23.5px;
+        font-size: 12px;
+        margin-bottom: 55px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        margin-right: 26px;
+    }
+    .parthner__item:hover {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &__item-name {
+        margin-left: 18px;
+        line-height: 16.8px;
+        text-decoration: underline;
+    }
+
+    &__inner {
+        display: none;
+    }
+
+    &__inner--active {
+        display: block;
+    }
+
+    &__btn {
+        min-width: 90px;
+        border-radius: 30px;
+        border: 1px solid #D0D0D0;
+        padding: 5px 0;
+        background-color: #fff;
+        font-size: 10px;
+        line-height: 9.6px;
+        text-align: center;
+        font-weight: 500;
+        color: $text;
+        margin: 0 auto;
+        display: block;
+        padding-right: 26px;
+        padding-left: 10px;
+        margin-bottom: 19px;
+
+    }
+
+    .parthner__btn:hover {
+        background-color:#F2994A;
+        transition: all .3s;
+        color: #fff;
+    }
+
+    .btn-open {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/down.png");
+            position: absolute;
+            top: 63%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+
+    .btn-close {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("../img/content/up.png");
+            position: absolute;
+            top: 62%;
+            right: -17px;
+            width: 8.5px;
+            height: 6.5px;
+            display: block;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.reviews {
+    &__title {
+        line-height: 19.2px;
+        font-family: "BwModelicaBold";
+        font-size: 16px;
+        margin-bottom: 21px;
+
+    }
+
+    &__items {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        display: flex !important;
+        align-items: center;
+        max-width: 475px;
+        width: 100%;
+        border: 1px solid #497952;
+        padding: 7px 18px 20px;
+    }
+    .reviews__item:hover {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &__content {
+        margin-left: 12px;
+        position: relative;
+    }
+
+    &__box {
+        max-width: 366px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+
+    &__share {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+
+    &__share-date {
+        margin-right: 13px;
+        font-size: 11px;
+        line-height: 13.2px;
+        color: #D0D0D0;
+        margin-bottom: 15px;
+        position: absolute;
+        top: 2px;
+        right: 80px;
+
+    }
+
+    // .rate-star {
+
+    //     polygon {
+    //         fill: #F9DA92;
+    //     }
+    // }
+    &__box-text {
+        font-size: 12px;
+        line-height: 14.4px;
+        margin-bottom: 7px;
+    }
+
+    &__profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__profile-title {
+        font-size: 12px;
+        line-height: 14.4px;
+        min-width: 66px;
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+
+    &__item-link {
+        position: absolute;
+        right: 0;
+        font-size: 11px;
+        line-height: 13.2px;
+        color: $bg;
+        text-decoration: underline;
+    }
+
+    .slick-btn {
+        background-color: transparent;
+        border: none;
+        border-radius: 10%;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        right: 0;
+        z-index: 10
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        left: -87px;
+        z-index: 10
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        background-color: $bg;
+        color: #fff;
+        transition: .8s;
+    }
+}
+
+
+
+// end parthner

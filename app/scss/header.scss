@@ -1,0 +1,211 @@
+// start header
+
+.header {
+    background-color: #fff;
+    &__top {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        font-size: 11px;
+        line-height: 13.2px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__list-item {
+        margin-right: 25px;
+    }
+
+    &__top-info {
+        margin-left: 341px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top-link {
+        width: 136px;
+        border-radius: 30px;
+        color: $bg;
+        text-align: center;
+        padding: 4px 15px;
+        border: 1px solid #497952;
+        margin-right: 20px;
+        font-family: "BwModelicaBold";
+    }
+    .header__top-link:hover {
+        background-color:#F2994A;
+        transition: all .3s;
+        color: #fff;
+    }
+.header__list-link:hover {
+        color: #F2994A;
+        transition: all .3s;
+}
+    &__top-lock {
+        margin-right: 13px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-family: 'BwModelicaMedium';
+        font-weight: 600;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__inner-info {
+        position: relative;
+        padding-left: 45px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/header/map.svg);
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top: 13px
+        }
+    }
+
+    &__inner-address {
+        width: 197px;
+        height: 30px;
+    }
+
+    &__inner-work {
+        position: relative;
+        padding-left: 45px;
+        margin-right: 40px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/header/clock.svg);
+            width: 35px;
+            height: 30px;
+            left: 0;
+            top: 13px
+        }
+    }
+
+    &__inner-time {
+        width: 110px;
+
+        span {
+            margin-left: 15px;
+        }
+    }
+
+    &__inner-time:first-child {
+        margin-bottom: -13px;
+    }
+
+    &__inner-phone {
+        position: relative;
+        padding-left: 45px;
+        margin-right: 43px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/header/phone.svg);
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top: 0px
+        }
+    }
+
+    &__inner-tel {
+        width: 111px;
+        display: block;
+    }
+
+    &__inner-basket {
+        margin-right: 20px;
+    }
+}
+
+// .menu-page__wrapper {
+//     display: none;
+// }
+.menu-page {
+    background-color: $bg;
+    margin-bottom: 17px;
+    &__list {
+        margin-left: 138px;
+        margin-right: 107px;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+        color: #FAFFFA;
+        font-family: "BwModelicaBold";
+        font-size: 14px;
+        line-height: 16.8px;
+        z-index: 52;
+    }
+
+    &__item+.menu-page__item {
+        margin-right: 30px;
+    }
+
+    &__item:first-child {
+        margin-right: 30px;
+    }
+    span {
+        display: none;
+    }
+    &__item:hover {
+        color: #F2994A;
+        transition: all .3s;
+       
+    }
+    &__btn {
+        display: none;
+    }
+}
+.menu-page__list li + .menu-page__list li {
+    margin-right: 30px;   
+}
+.menu__big-btn {
+    display: none;
+}
+
+
+.search {
+    &__form {
+        max-width: 1070px;
+        display: flex;
+    }
+
+    &__input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #D0D0D0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 180px;
+        padding: 9px 10px;
+        &::placeholder {
+            font-size: 11px;
+            line-height: 13.2px;
+            color: #ABAAAA;
+        }
+    }
+    &__button {
+        margin-right: 7px;
+        border: none;
+        background-color: transparent;
+    }
+   
+}
+
+// end header

@@ -74,9 +74,11 @@ function scripts() {
 //Собираем все css файлы подключаемых плагинов, конкатинируем их в 1 минифицированный файл css и закидываем его в папку dist/css с именем libs.min.css///////////////////////////////////////////////////////////////////////////////////////////////////////
 function stylesLibs() {
 	return src([
-		'node_modules/normalize.css/normalize.css'
-		// 'node_modules/slick-carousel/slick/slick.css',
-		// 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+		'node_modules/normalize.css/normalize.css',
+		'node_modules/slick-carousel/slick/slick.css',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+		'node_modules/rateyo/src/jquery.rateyo.css'
+		// 'node_modules/font-awesome/css/font-awesome.css'
 		// 'node_modules/animate.css/animate.css'
 	])
 		.pipe(scss({
@@ -90,9 +92,10 @@ function stylesLibs() {
 //Собираем все js файлы подключаемых плагинов, конкатинируем их в 1 минифицированный файл js и закидываем его в папку dist/js с именем libs.min.js///////////////////////////////////////////////////////////////////////////////////////////////////////
 function scriptsLibs() {
 	return src([
-		'node_modules/jquery/dist/jquery.js'
-		// 'node_modules/slick-carousel/slick/slick.js',
-		// 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+		'node_modules/rateyo/src/jquery.rateyo.js'
 		// 'node_modules/wow.js/dist/wow.js'
 	])
 		.pipe(uglify())

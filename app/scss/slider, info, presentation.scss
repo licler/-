@@ -1,0 +1,151 @@
+// start slider-page
+.slider-page {
+    padding-top: 20px;
+
+    &__items {
+        position: relative;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0 41%;
+        text-align: center;
+        bottom: 25px;
+    }
+
+    .slick-dots button {
+        font-size: 0;
+        width: 10px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: $bg;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+
+    .slick-btn {
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 10;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 10;
+    }
+}
+
+// end slider-page
+
+// start info
+.info {
+    margin: 52px 108px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        max-width: 125px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    &__item-box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item-name {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'BwModelicaBold';
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: $bg;
+    }
+    .info__item:hover {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+}
+
+// end info
+
+// start presentation
+.presentation {
+    margin-bottom: 52px;
+    &__wrapper {
+        padding: 0 55px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__box {
+        max-width: 540px;
+    }
+    &__box-title {
+        font-family: 'BwModelicaBold';
+        font-size: 16px;
+        line-height: 19.2px;
+        color: $text;
+        margin-bottom: 13px;
+    }
+    &__box-text {
+        font-family: 'BwModelicaMedium';
+        font-size: 12px;
+        line-height: 16px;
+        color: $text;
+    }
+    &__box-link {
+        font-size: 11px;
+        line-height: 13px;
+        color: $bg;
+        position: absolute;
+        left: 45%;
+        text-decoration: underline;
+    }
+    &__box-link:hover {
+        color:#eb9c3bf0;
+    }
+    &__info {
+        position: relative;
+    }
+    &__info-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+ 
+
+}
+
+// end presentation
