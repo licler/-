@@ -35,7 +35,6 @@
     }
 }
 
-
 @media (max-width: 890px) {
     .header__inner-work {
         display: none;
@@ -84,14 +83,10 @@
     }
 
     .header__list {
-        // z-index: 2;
         display: none;
-        // transform: translateX(-218%);
-        // transition: all 1s;
     }
 
 }
-
 @media (max-width: 710px) {
     .header__top-link {
         display: none;
@@ -103,7 +98,6 @@
         margin-top: 0;
         height: 0;
     }
-
     .header__list.active {
         top: 150px;
     }
